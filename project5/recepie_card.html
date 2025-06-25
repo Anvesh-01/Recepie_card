@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepie card</title>
+    <link rel="stylesheet" href="recepie_card.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Recepie Card</h1>
+    </header>
+    <label for="options" class="option"></label>
+    <select id="options">
+        <option value="all">All types</option>
+        <option value="option1">Indian</option>
+        <option value="option2">Italian</option>
+        <option value="option3">Mexican</option>
+        <option value="option4">Japanese</option>
+        <option value="option5">France</option>
+        </select>
+        <div class="container">
+            <div class="card1">
+                <img src="download (20).jpeg"alt="Indian Dish" class="card-image">
+                <h2>Paneer Butter Masala</h2>
+                <p class="description">Creamy, mildly spiced tomato gravy with paneer cubes.</p>
+                <h3>Ingredients:</h3>
+                <ul class="ingredients">
+                    <li>Paneer</li>
+                    <li>Tomatoes</li>
+                    <li>Butter</li>
+                    <li>Spices</li>
+                    </ul>
+                <h3>Preparation</h3>
+                <p>Cook tomatoes and spices, blend, add paneer and cream, simmer gently.</p>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+            </div>
+            <div class="card2">
+                <img src="download.jpeg"alt="Italian Dish" class="card-image">
+                <h2>Margherita Pizza</h2>
+                <p class="description">Classic Italian pizza with tomato, mozzarella, and basil.</p>
+                <h3>Ingredients:</h3>
+                <ul class="ingredients">
+                    <li>Pizza dough</li>
+                    <li>Tomato sauce</li>
+                    <li>Fresh mozzarella</li>
+                    <li>Basil leaves</li>
+                    </ul>
+                <h3>Preparation</h3>
+                <p>Spread sauce on dough, add cheese and basil, then bake until golden.</p>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+            </div>
+            <div class="card3">
+                <img src="download (1).jpeg"alt="Mexican Dish" class="card-image">
+                <h2> Mexico - Chicken Enchiladas</h2>
+                <p class="description">Tortillas filled with chicken and topped with spicy red sauce.</p>
+                <h3>Ingredients:</h3>
+                <ul class="ingredients">
+                    <li>Corn tortillas</li>
+                    <li>Shredded chicken</li>
+                    <li>Enchilada sauce</li>
+                    <li>Cheese</li>
+                </ul>
+                <h3>Preparation</h3>
+                <p>Fill tortillas, roll, place in tray, pour sauce, top with cheese, and bake.</p>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+            </div>
+            <div class="card4">
+                <img src="download (2).jpeg"alt="Japanese Dish" class="card-image">
+                <h2>Japan - Sushi Rolls</h2>
+                <p class="description">Rice and vegetables wrapped in seaweed with soy dip.</p>
+                <h3>Ingredients:</h3>
+                <ul class="ingredients">
+                    <li>Sushi rice</li>
+                    <li>Nori sheets</li>
+                    <li>Cucumber, avocado, carrots</li>
+                    <li>Rice vinegar, soy sauce</li>
+                    </ul>
+                    <h3>Preparation</h3>
+                    <p>Spread rice on nori, add veggies, roll tightly, slice and serve with soy sauce.</p>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+            </div>
+            <div class="card5">
+                <img src="download (3).jpeg"alt="France Dish" class="card-image">
+                <h2>France - Ratatouille</h2>
+                <p class="description">A colorful baked dish with layered vegetables and herbs.</p>
+                <h3>Ingredients:</h3>
+                <ul class="ingredients">
+                    <li>Tomatoes, zucchini, eggplant</li>
+                    <li>Bell peppers</li>
+                    <li>Olive oil</li>
+                    <li>Herbs de Provence</li>
+                </ul>
+                <h3>Preparation</h3>
+                <p>Thinly slice vegetables, layer in a dish, drizzle with oil and herbs, bake.</p>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+            </div>
+        </div>
+        <script>
+document.getElementById('options').addEventListener('change', function() {
+    const value = this.value;
+    const cards = [
+        document.querySelector('.card1'),
+        document.querySelector('.card2'),
+        document.querySelector('.card3'),
+        document.querySelector('.card4'),
+        document.querySelector('.card5')
+    ];
+    const map = {
+        all: [0,1,2,3,4],
+        option1: [0],
+        option2: [1],
+        option3: [2],
+        option4: [3],
+        option5: [4]
+    };
+    cards.forEach((card, idx) => {
+        if (map[value].includes(idx)) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+
+document.querySelectorAll('.star-rating').forEach(function(rating) {
+    const stars = rating.querySelectorAll('.star');
+    let selected = -1;
+    stars.forEach(function(star, idx) {
+        star.addEventListener('click', function() {
+            selected = idx;
+            updateStars();
+        });
+        star.addEventListener('mouseover', function() {
+            highlightStars(idx);
+        });
+        star.addEventListener('mouseout', function() {
+            updateStars();
+        });
+    });
+    function highlightStars(idx) {
+        stars.forEach((s, i) => {
+            s.classList.toggle('selected', i <= idx);
+        });
+    }
+    function updateStars() {
+        stars.forEach((s, i) => {
+            s.classList.toggle('selected', i <= selected);
+        });
+    }
+});
+</script>
+</body>
+</html>
